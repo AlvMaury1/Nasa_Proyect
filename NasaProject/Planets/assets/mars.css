@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  color:black;
+}
+body {
+  font-family: "Roboto";
+}
+
+td, th {
+  border: 1px solid #777;
+  padding: 0.5rem;
+  text-align: left;
+  
+}
+.tb-left{
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 100px;
+  width: 80%;
+  
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+.card-text{
+  font-size: 0.9em;
+  padding:0px 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+  margin:0 100px;
+}
+.grid-item {
+
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+nav {
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color:black;
+  width: 100%;
+}
+.logo {
+  background: url("Space_Apps_Logo_White.png") no-repeat 80% 80%;
+  background-size: contain;
+  width: 180px;
+  height: 55px;
+  float: left;
+}
+.menu{
+  position: absolute;
+  right: 50px;
+}
+.menu a{
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 18px; 
+  text-align: center;
+}
+.menu a:hover{
+  color: #FFBF00;
+  font-size:21px;
+  transition:.5s;
+}
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btnx{
+  display:none;
+  position:absolute;
+  right:20px;
+}
+.btnx:hover > span{
+  background-color:#333;
+}
+.btnx span{
+  display:block;
+  margin:6px;
+  width:40px;
+  height:3px;
+  background:white;
+}
+.banner-section-bg-containerx {
+  background-image: url("../Imagenes/mars.png");
+  height: 100vh;
+  background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-headingx {
+  color: white;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: bold;
+}
+.d-flexx{
+  display:flex-box;
+  display:flex;
+  flex-direction:column;
+  flex-direction:column;
+  justify-content:center;
+}
+.text-center{
+  text-align:center;
+}
+img{
+  width:100%;
+  height:300px;
+}
+p{
+  padding:0px 100px;
+}
+h2{
+  font-size: 28px;
+  font-weight: 700;
+  padding:30px 100px 10px 100px;
+}
+
+.name{
+  font-weight: bold;
+  padding-top:5px;
+}
+.img{
+  display: grid;
+  grid-template-columns:repeat(3,2fr);
+  grid-gap:1em;
+  margin:0px 100px;
+}  
+
+.centrar{
+    display: block;
+    margin-left: auto;
+margin-right: auto;}
+
+
+
+@media only screen and (max-width: 750px){
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btnx {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+  .logo{  
+    width: 70px;
+  height: 60px;}
+  nav {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;}
+ 
+
+  h2{
+  text-align:center;
+  font-weight: 700;
+  padding:20px 50px;
+  }p{
+    text-align:center;
+    padding:10px 20px;
+    font-size:15px;
+  }
+
+  .banner-section-bg-containerx {
+  background-image: url("https://www.apluma.medium/wp-content/uploads/2022/03/46a5121-scaled-e1646249424443.jpg");
+
+    background-position: center;
+
+    
+    background-size: cover;
+}
+}
+
+a{
+  text-decoration: none!important;
+}
+.card{
+  position:static !important;;
+}
